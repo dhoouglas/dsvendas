@@ -1,12 +1,19 @@
-import ImgDsDark from 'assets/img/ds-dark.svg';
+import ImgDsDark from "assets/img/new-logo.svg";
 
 function NavBar() {
   return (
-    <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom shadow-sm">
+    <div className="d-flex flex-column flex-md-row align-items-center p-1 px-md-4 mb-0 bg-light border-bottom shadow-sm">
       <div className="container">
-        <nav className="my-2 my-md-0 mr-md-3">
-          <img src={ImgDsDark} alt="DevSuperior" width="120" />
+        <nav className="my-2 my-md-0 mr-md-3 flex">
+          <img src={ImgDsDark} alt="DevSuperior" width="120" height="40" />
         </nav>
+      </div>
+
+      <div>
+        <h5 className="text-primary my-md-0 fs-6">
+          <strong className="text-secondary">DEV</strong>
+          <strong>DOUGLAS</strong>
+        </h5>
       </div>
     </div>
   );
